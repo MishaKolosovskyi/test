@@ -38,6 +38,14 @@ public class ReviewDaoImpl implements ReviewDao {
     @Override
     public List<String> getMostUsedWords() {
         String sqlQuery = "SELECT Text FROM TEST";
+        
+          //select TEXT, count(*) from TEST
+        //where TEXT is not null
+        //  and TEXT NOT IN ('', 'and', 'for', 'of', 'on')
+        //group by TEXT
+        //order by count(*) desc
+        //limit 1000;
+        
         return null;
     }
 }
